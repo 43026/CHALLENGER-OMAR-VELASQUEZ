@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es-col">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="texto">
+            <h1><strong>Bienvenidos al Encriptador</strong></h1>
+            <p class="saludo">Hola Mi nombre es Omar Velasquez soy estudiante de Alura Latam y este
+                es mi primer Chellenger, espero lo disfruten.
+            </p>
+            <textarea type="string" id="texto_entrada" class="contenedor_input" placeholder="Ingrese el texto aqui">
+                </textarea>
+            <div class="condiciones">
+                <p>*Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <button onclick="encriptar()" class="boton_encriptar">Encriptar</button>
+                <button onclick="desencriptar()" class="boton_desencriptar">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="resultado">
+          
+            <div class="contenedor_respuesta">
+                <textarea id="respuesta">
+        </textarea>
+            </div>
+
+            <img src="./assets/imagen2.png" alt="" id="informacion">
+            <div class="mensaje_encriptado" id="mensaje_encriptado">
+                <h2 id="mensaje">Ningun Mensaje fue encontrado</h2>
+                <p id="solicitud">Ingresa el texto que deseas encriptar o desencriptar</p>
+            </div>
+            <div class="boton_copiar">
+                <button onclick="copiar()" class="copia">copiar</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Desarrollado por Omar Alejandro Velasquez Olaya
+            <br> Santiago de Cali, Colombia.
+            <br>Año 2024
+        </p>
+    </footer>
+    <script src="scripts/app.js"></script>
+</body>
+
+</html>
